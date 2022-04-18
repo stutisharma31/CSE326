@@ -1,0 +1,236 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+header{
+    width: 100%;
+    height: 90vh;                                                                                                                                                                                                                                                                                                                                                       
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0, 0, 0.8)),
+                    url("../../destinyimg.jpg");
+}
+nav{
+    width:100%;
+    height:80px;
+    background: white;
+    color: black ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    position: fixed;
+    top: 0;
+}
+.logo{
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+.logo span{
+    color: chocolate;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.menu a:first-child{
+    color: firebrick;
+}
+.menu a:hover{
+    color:firebrick;
+}
+.icon i{
+    font-size: 20px;
+}
+.icon i:hover{
+    color: crimson;
+}
+.icon a{
+    text-decoration: none;
+    background: darkgoldenrod ;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.h-text{
+    color: white;
+    max-width: 700px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#globe{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.h-text h1{
+    font-family: sans-serif;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+.h-text input{
+    width:60%;
+    padding:20px;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.h-text button{
+    width: 30%;
+    padding: 20px;
+    background: darkorange;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.filter-gallery{
+    padding: 100px;
+}
+.portfolio-menu{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+.portfolio-menu ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 20px 0px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: 0.5s ease;
+        text-align: center;
+    }
+.portfolio-menu ul li:hover{
+    color: white;
+    background: darkorange;
+    border-radius: 8px;
+}
+li.active{
+    color: white;
+    background: darkorange;
+    border-radius: 8px;
+}
+.portfolio-item{
+    width: 100%;
+}
+.portfolio-item .item{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.portfolio-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.zodiacsign{
+    width: 100%;
+    padding: 20px 100px;
+    font-family: sans-serif;
+}
+.zodiacsign-info h1{
+    text-align: center;
+}
+.zodiacsign-info h1{
+ font-size: 2.5em;
+}
+.zodiacsign-info h1 span{
+    color: firebrick;
+}
+footer{
+    width: 100%;
+    height: 100vh;
+    background: rgb(32, 32, 32);
+    padding: 50px 100px;
+}   
+.newsletter{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+} 
+.newsletter >div{
+    flex-basis: 50%;
+}
+.ntext{
+    text-align: right;
+}
+.newsletter h2{
+    font-size: 2em;
+    font-family: sans-serif;
+}
+.newsletter p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.newsletter label{
+    position:relative;
+}
+.newsletter input{
+    padding: 20px;
+    width: 70%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+.newsletter  button{
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 30%;
+    background: orange;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0 8px 8px 0;
+}
+.f-contact{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.f-contact>div{
+    flex-basis: 20%;
+}
+.f-contact p{
+      line-height: 2em;
+      font-size: 20px;
+      color: grey;
+      cursor: pointer;
+}
+.f-contact p:hover{
+    color: white;
+}
+.f-contact i{
+    background: white;
+    color:black;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 5px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}

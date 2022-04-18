@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DESTINY BLOG</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Tryst<span>with</span>DESTINY
+            </div>
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">DISPLAY</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <div class="icon">
+                <i class="fa fa-search"></i>
+                <a href="#">LOGIN</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <i class="fa fa-globe" id="globe"></i>
+            <h1>"Eventually, everything connects."</h1>
+            <input placeholder="Search here...">
+            <button><i class="fa fa-search"></i> </button>
+        </section>
+    </header>
+    <section class="filter-gallery">
+        <div class="portfolio-menu">
+            <ul>
+                <li class="active" data-filter="*">ALL</li>
+                <li data-filter=".QUOTES">QUOTES</li>
+                <li data-filter=".DESTINY">DESTINY</li>
+                <li data-filter=".LIFE">LIFE</li>
+            </ul>
+        </div> 
+        <div class="portfolio-item">
+            <div class="item QUOTES">
+                <img src="../../imgp1.jpg" width="100" height="100">
+            </div>
+            <div class="item DESTINY">
+                <img src="../../imgp2.jpg" width="100" height="100">
+            </div>
+            <div class="item LIFE">
+                <img src="../../imgp3.jpg" width="100" height="100">
+            </div>
+            <div class="item QUOTES">
+                <img src="../../imgp4.jpg" width="100" height="100">
+            </div>
+            <div class="item DESTINY">
+                <img src="../../imgp5.jpg" width="100" height="100">
+            </div>
+            <div class="item LIFE">
+                <img src="../../imgp6.jpg" width="100" height="100">
+            </div>
+            <div class="item QUOTES">
+                <img src="../../imgp7.jpg" width="100" height="100">
+            </div>
+            <div class="item DESTINY">
+                <img src="../../imgp8.jpg" width="100" height="100">
+            </div>
+            <div class="item LIFE">
+                <img src="../../imgp9.jpg" width="100" height="100">
+            </div>
+            <div class="item QUOTES">
+                <img src="../../imgp10.jpg" width="100" height="100">
+            </div>
+            <div class="item DESTINY">
+                <img src="../../img11.jpg" width="100" height="100">
+            </div>
+            <div class="item LIFE">
+                <img src="../../img12.jpg" width="100" height="100">
+            </div>
+        </div>   
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.portfolio-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+$('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li' ).removeClass('active');
+    $(this).addClass('active');
+    var selector = $(this).attr('data-filter');
+    $('.portfolio-item').isotope({
+        filter:selector
+});
+return false;
+});
+    </script>
+    <section class="zodiacsign">
+        <div class="zodiacsign-info">
+        <h1>THE <span>ZODIAC</span> SIGNS</h1>
+        </div>
+        <div class="zodiac-info">
+            <img src="../../ARIES.jpg" height="200" width="200">
+            <p>
+               <h2> Aries (March 21 - April 19)</h2><br>
+                Aries loves to be number one, so it’s no surprise that these audacious rams are the first sign of the zodiac. Bold and ambitious, Aries dives headfirst into even the most challenging situations (which is appropriate, since the body part associated with Aries is the head). Like their fellow fire signs, Leo and Sagittarius, Aries is a passionate, motivated, and confident leader who builds community with their cheerful disposition and relentless determination. Uncomplicated and direct in their approach, they often get frustrated by exhaustive details and unnecessary nuances.
+            </p>
+            <img src="../../taurus.jpg" height="200" width="200">
+            <p>
+                <h2>Taurus (April 21 - May 20)</h2><br>
+                Tauruses have a regal quality about them. They are graceful and diligent laborers. They can be stubborn, bull-headed, and set in their ways, but they are also great listeners and very dependable.Taurus can absolutely go on forever. They never feel fatigued. They are like machines. And no matter what they throw at them, they will inevitably overcome their obstacles because they’ve already prepared for every contingency. 
+            </p>
+            <img src="../../gemini.jpg" height="200" width="200">
+            <p>
+                <h2>Gemini (May 21 - June 20)</h2><br>
+                Gemini is accordingly excellent at guiding change and transformation. These curious twins are terrific pioneers, using their energy to spearhead innovative creative projects. A fearless thinker, Gemini is always down to try something new. But after they have shared their progressive vision with the world, it’s best to let these twins get back to ideating: These hyperactive air signs have short attention spans and are most satisfied when they can move fluidly from one idea to the next.
+            </p> 
+                <img src="../../cancer.jpg" height="200" width="200">
+                <p>
+                    <h2>Cancer(June 21 - July 22)</h2><br>
+                    Cancer is a cardinal water sign. Represented by the crab, this oceanic crustacean seamlessly weaves between the sea and shore, representing Cancer’s ability to exist in both emotional and material realms. Cancers are highly intuitive and their psychic abilities manifest in tangible spaces: For instance, Cancers can effortlessly pick up the energies in a room. These crabs are highly sensitive to their environments, as well as extremely self-protective. Much like their celestial spirit animal, Cancers are shielded by hard, external shells. At first, these crabs may be perceived as cold or distant. With time, though, Cancers reveal their gentle nature, genuine compassion, and mystical capabilities. Just don't be surprised if it takes a while to get to know them.
+              </p>
+                    <img src="../../leo.jpg" height="200" width="200">
+                    <p>
+                        <h2>Leo (July 23- August22) </h2><br>
+                        This fixed sign is known for its ambition and determination, but above all, Leos are celebrated for their remarkable bravery. In tarot, Leo is represented by the “strength” card, which depicts the divine expression of physical, mental, and emotional fortitude. Fearless optimists who refuse to accept failure, Leos will find their deep wells of courage grow as they mature    
+                    </p>
+                        <img src="../../virgo.jpg" height="200" width="200">
+                        <p>
+                            <h2>Virgo (August 23 - September 22)</h2><br> 
+                            Above all else, Virgos want to help. They are kind, gentle, and supportive friends and lovers who use their incredible intellect and resourcefulness to problem-solve. Virgo's opposite sign, Pisces, offers guidance through spirituality, but Virgos want to assist on a practical level. These earth signs are always striving to provide workable solutions and improve broken systems. Methodical, committed, and hardworking, they make excellent teachers, healers, editors, and musicians.
+                        </p>
+                            <img src="../../libra.jpg" height="200" width="200">
+                            <p>
+                                <h2>Libra (September 23 - October 22)</h2><br>   
+                            Libra is a cardinal sign, which means Libras are accordingly great at launching new initiatives. However, because Libras consider multiple perspectives in all pursuits, these air signs struggle with indecision. Instead of constantly seeking outside perspectives, Libras would do well to develop (and trust) their own intuition. Their characteristic ambivalence aside, Libras can navigate virtually any social situation, effortlessly resolving conflicts by simply turning on the charm.    
+                            </p>
+                            <img src="../../scorpio.jpg" height="200" width="200">
+                            <p>
+                                <h2> Scorpio( October 23 - November 22)</h2><br>   
+                                Scorpio is one of the most misunderstood signs of the zodiac. Because of its incredible passion and power, Scorpio is often mistaken for a fire sign. In fact, Scorpio is a water sign that derives its strength from the psychic, emotional realm. Like fellow water signs, Cancer and Pisces, Scorpio is extremely clairvoyant and intuitive. 
+                            </p>
+                            <img src="../../sagittarius.jpg" height="200" width="200">
+                            <p>
+                                <h2> Sagittarius(November 23 - December 21)</h2><br>   
+                                Sagittarius is a mutable sign, meaning it is associated with adaptability and flexibility. This perfectly reflects the archers' deep-rooted desire for change. Sagittarians are born to explore and it is critical that these archers have the freedom to roam.  
+                            </p>
+                            <img src="../../capricorn.jpg" height="200" width="200">
+                            <p>
+                                <h2> Capricorn(December 22 -January19)</h2><br>   
+                                Capricorns are relentless: They are determined to overcome whatever stands in their way. They have big picture, long-term goals and they absolutely don't want to be bogged-down by annoying details or superfluous information. However, because of their unwavering focus, Capricorns can sometimes be perceived as cold, unemotional, or even cutthroat — but that's only because Capricorn has perspective.  
+                            </p>
+                            <img src="../../aquarius.jpg" height="200" width="200">
+                            <p>
+                                <h2> Aquarius (January 20- February 19)</h2><br>   
+                                Aquarius is positioned as an independent entity separate from the life-giving hydration it offers the cracked soil. In this respect, Aquarius exposes its deep connection to community: Rooted in teamwork, collaboration, and the concept of the "greater good," Aquarius is determined to make a powerful difference in the world.  
+                            </p>
+                            <img src="../../pisces.jpg" height="200" width="200">
+                            <p>
+                                <h2> (February 20- March 20)</h2><br>   
+                                A mutable sign, Pisces effortlessly adapts to their surroundings. These visionary fish have unparalleled access to the collective unconscious through their clairvoyance and make incredible artists and creatives. Kind and gentle, they're invigorated by shared experiences of music and romance. Any relationship with mystical Pisces is guaranteed to involve deep spiritual exploration.  
+                            </p>
+                        </div>
+    </section>
+<footer>
+    <div class="newsletter">
+        <div>
+            <h2>Subscribe our Newsletter</h2>
+            <p>Destiny has a way of finding you</p>
+        </div>
+        <div class="ntext">
+            <label>
+                <input type="text" name="" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </label>
+        </div>
+    </div>
+    <div class="f-contact">
+        <div>
+            <h1>Information</h1>
+            <p>We have a destiny. We have a purpose.
+                </p>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div>
+            <h1>Useful links</h1>
+            <p>About us</p>
+            <p>Gallery</p>
+            <p>Blog posts</p>
+        <p>Pricing plans</p>
+                </div>
+                <div>
+                    <h1>Details</h1>
+                    <p>Destiny</p>
+                    <p>Fate</p>
+                    <p>About</p>
+                <p>Pricing plans</p>
+                        </div>
+                        <div>
+                            <h1>Help & Support</h1>
+                            <p>Privacy policy</p>
+                            <p>Terms & Conditions</p>
+                            <p>Blog posts</p>
+                        <p>Pricing plans</p>
+                                </div>                        
+    </div>
+</footer>
+</body>    
+</html>
